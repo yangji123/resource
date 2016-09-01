@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <script src="jquery.js"></script>
+    <script src="jquery.mobile-1.4.5.js"></script>
+    <link href="jquery.mobile-1.4.5.css" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="home">
+    <div data-role="header" data-position="fixed">
+        <h1>邮箱</h1>
+    </div>
+    <form class="ui-filterable">
+
+        <input id="myFilter" data-type="search" placeholder="搜索">
+
+    </form>
+
+    <ul data-role="listview">
+
+        <li><a href="#email" class="ui-nodisc-icon ui-alt-icon">收件箱</a></li>
+
+        <li><a href="#" class="ui-nodisc-icon ui-alt-icon">星标邮件</a></li>
+
+    </ul>
+
+    <div data-role="main">
+        <p>应用</p>
+    </div>
+
+    <ul data-role="listview">
+
+        <li><a href="#" class="ui-nodisc-icon ui-alt-icon">通讯录</a></li>
+
+        <li><a href="#" class="ui-nodisc-icon ui-alt-icon">贺卡</a></li>
+
+        <li><a href="#" class="ui-nodisc-icon ui-alt-icon">读书</a></li>
+
+        <li><a href="#detail" class="ui-nodisc-icon ui-alt-icon">更多应用</a></li>
+
+    </ul>
+    <div data-role="main">
+        <p>文件夹</p>
+    </div>
+    <ul data-role="listview">
+
+        <li><a href="#" class="ui-nodisc-icon ui-alt-icon">群邮件</a></li>
+
+        <li><a href="#" class="ui-nodisc-icon ui-alt-icon">草稿箱</a></li>
+
+        <li><a href="#send" class="ui-nodisc-icon ui-alt-icon">已发送</a></li>
+
+    </ul>
+    <div data-role="navbar" data-position="fixed">
+        <ul>
+
+            <li><a href="#" data-icon="home" class="ui-nodisc-icon ui-alt-icon">首页</a></li>
+
+            <li><a href="#" data-icon="eye" class="ui-nodisc-icon ui-alt-icon">发现</a></li>
+
+            <li><a href="#" data-icon="gear" class="ui-nodisc-icon ui-alt-icon">设置</a></li>
+
+        </ul>
+    </div>
+</div>
+
+<div data-role="page"  id="detail">
+
+    <div data-role="header" data-position="fixed">
+        <h1>更多应用</h1>
+        <a href="#" data-role="button" data-rel="back">返回</a>
+    </div>
+    <div data-role="main" class="ui-content">
+        <p>应用</p>
+        <div data-role="controlgroup">
+            <a href="#" data-role="button" class="ui-btn ui-icon-camera ui-btn-icon-left">拍照</a>
+            <a href="#" data-role="button" class="ui-btn ui-icon-grid ui-btn-icon-left">相册</a>
+            <a href="#" data-role="button" class="ui-btn ui-icon-video ui-btn-icon-left">录像</a>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="email">
+    <div data-role="header" data-position="fixed">
+        <a id="backButton" href="#" data-role="button" data-rel="back">返回</a>
+        <h1>收件箱</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+        <p>未读邮件</p>
+
+        <div data-role="collapsible" data-collapsed="false">
+            <h1>标题</h1>
+            <p>折叠的内容</p>
+        </div>
+        <div data-role="collapsible">
+            <h1>标题</h1>
+            <p>折叠的内容</p>
+        </div>
+        <div data-role="collapsible">
+            <h1>标题</h1>
+            <p>折叠的内容</p>
+        </div>
+
+        <div data-role="collapsible-set">
+            <div data-role="collapsible">
+                <h1>标题1</h1>
+                <p>折叠内容1</p>
+            </div>
+            <div data-role="collapsible">
+                <h1>标题2</h1>
+                <p>折叠内容2</p>
+            </div>
+            <div data-role="collapsible">
+                <h1>标题3</h1>
+                <p>折叠内容3</p>
+            </div>
+            <div data-role="collapsible">
+                <h1>标题4</h1>
+                <p>折叠内容4</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div data-role="page" id="send">
+    <div data-role="header" data-position="fixed">
+        <a id="backBtn" href="#" data-role="button" data-rel="back">返回</a>
+        <h1>已发送</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+        <p>已发邮件</p>
+
+        <div data-role="collapsible" data-collapsed="false">
+            <h1>标题</h1>
+            <p>折叠的内容</p>
+        </div>
+        <div data-role="collapsible">
+            <h1>标题</h1>
+            <p>折叠的内容</p>
+        </div>
+        <div data-role="collapsible">
+            <h1>标题</h1>
+            <p>折叠的内容</p>
+        </div>
+
+        <div data-role="collapsible-set">
+            <div data-role="collapsible">
+                <h1>标题1</h1>
+                <p>折叠内容1</p>
+            </div>
+            <div data-role="collapsible">
+                <h1>标题2</h1>
+                <p>折叠内容2</p>
+            </div>
+            <div data-role="collapsible">
+                <h1>标题3</h1>
+                <p>折叠内容3</p>
+            </div>
+            <div data-role="collapsible">
+                <h1>标题4</h1>
+                <p>折叠内容4</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
