@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jquery.js"></script>
+    <script src="jquery.mobile-1.4.5.js"></script>
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.css" type="text/css">
+</head>
+<body>
+<!--页面1 首页-->
+<div data-role="page" id="setting">
+    <div data-role="header">
+        <h1>欢迎使用“邮件”</h1>
+    </div>
+    <ul data-role="listview">
+        <li><a href="#user" data-role="button" class="ui-btn ui-icon-user ui-btn-icon-left">通讯录</a></li>
+        <li><a href="#iCloud" data-role="button" class="ui-btn ui-icon-cloud ui-btn-icon-left">iCloud</a></li>
+        <li><a href="#Exchange" data-role="button" class="ui-btn ui-icon-mail ui-btn-icon-left">Exchange</a></li>
+        <li><a href="#" data-role="button">Google</a></li>
+        <li><a href="#" data-role="button">YAHOO!</a></li>
+        <li><a href="#AOL" data-role="button">AoL.</a></li>
+        <li><a href="#Outlook" data-role="button" class="ui-btn ui-icon-mail ui-btn-icon-left">Outlook.com</a></li>
+        <li><a href="#else" data-role="button">其他</a></li>
+    </ul>
+</div>
+<!--通讯录-->
+<div data-role="page" id="user">
+    <div data-role="header" data-position="fixed">
+        <a href="#" data-role="button" data-rel="back">取消</a>
+        <h1>通讯录</h1>
+    </div>
+    <input type="text" data-type="search" placeholder="搜索" id="searchFriend">
+    <div data-role="main" class="ui-content">
+        <ul data-role="listview" data-input="#searchFriend" data-filter="true">
+            <li data-role="list-divider">同学</li>
+            <li data-icon="user"><a href="#" >小花</a></li>
+            <li data-icon="user"><a href="#" >小明</a></li>
+            <li data-icon="user"><a href="#" >小锤子</a></li>
+
+            <li data-role="list-divider">同事</li>
+            <li data-icon="user"><a href="#">小菠萝</a></li>
+            <li data-icon="user"><a href="#">小香蕉</a></li>
+            <li data-icon="user"><a href="#">小萝卜</a></li>
+
+            <li data-role="list-divider">智障</li>
+            <li data-icon="user"><a href="#">柜员</a></li>
+            <li data-icon="user"><a href="#">鞋子</a></li>
+            <li data-icon="user"><a href="#">衣服</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--页面2 iCloud-->
+<div data-role="page" id="iCloud">
+    <div data-role="header">
+        <h1>iCloud</h1>
+        <a href="#" data-role="button" data-rel="back">取消</a>
+    </div>
+    <div data-role="main">
+        <input type="text" id="email" name="email"
+               placeholder="example@icloud.com" data-clear-btn="true">
+        <input type="text" id="password" name="password"
+               placeholder="必填" data-clear-btn="true">
+        <a data-rel="forward">下一步</a>
+        <p style="font-size: 10px">忘记了邮箱或者密码？</p>
+    </div>
+</div>
+<!--页面3 Exchange-->
+<div data-role="page" id="Exchange">
+    <div data-role="header">
+        <h1>Exchange</h1>
+        <a href="#" data-role="button" data-rel="back">取消</a>
+    </div>
+    <div data-role="main">
+        <input type="text" id="nikeName" name="nikeName"
+               placeholder="email@company.com" data-clear-btn="true">
+        <input type="text" id="psd" name="psd"
+               placeholder="必填" data-clear-btn="true">
+        <input type="text" id="special" name="special"
+               placeholder="我的Exchange账户" data-clear-btn="true">
+    </div>
+    <a data-rel="forward">下一步</a>
+    <center>
+        <br>
+    <p style="font-size: 10px">Exchange 设备 ID</p>
+        <p style="font-size: 10px">F11SS05NE114194H09Q8EP89U8</p>
+    </center>
+</div>
+<!--页面4 AOL-->
+<div data-role="page" id="AOL">
+    <div data-role="header">
+        <h1>AOL</h1>
+        <a href="#" data-role="button" data-rel="back">取消</a>
+    </div>
+    <div data-role="main">
+        <input type="text" id="name" name="name"
+               placeholder="John Appleseed" data-clear-btn="true">
+        <input type="text" id="mail" name="mail"
+               placeholder="example@aol.com" data-clear-btn="true">
+        <input type="text" id="pssd" name="pssd"
+               placeholder="必填" data-clear-btn="true">
+        <input type="text" id="al" name="al"
+               placeholder="我的AOL账户" data-clear-btn="true">
+    </div>
+    <a data-rel="forward">下一步</a>
+</div>
+<!--页面5 Outlook-->
+<div data-role="page" id="Outlook">
+    <div data-role="header">
+        <h1>AOL</h1>
+        <a href="#" data-role="button" data-rel="back">取消</a>
+    </div>
+    <div data-role="main">
+        <input type="text" id="mail1" name="mail1"
+               placeholder="email@outlook.com" data-clear-btn="true">
+        <input type="text" id="pssd1" name="pssd1"
+               placeholder="必填" data-clear-btn="true">
+        <input type="text" id="out" name="out"
+               placeholder="我的Outlook账户" data-clear-btn="true">
+    </div>
+    <a data-rel="forward">下一步</a>
+</div>
+<!--页面6 其他-->
+<div data-role="page" id="else">
+    <div data-role="header">
+        <h1>新建账户</h1>
+        <a href="#" data-role="button" data-rel="back">取消</a>
+    </div>
+    <div data-role="main">
+        <input type="text" id="name2" name="name2"
+               placeholder="John Appleseed" data-clear-btn="true">
+        <input type="text" id="mail2" name="mail2"
+               placeholder="user@example.com" data-clear-btn="true">
+        <input type="text" id="pssd2" name="pssd2"
+               placeholder="必填" data-clear-btn="true">
+        <input type="text" id="al1" name="al1"
+               placeholder="我的电子邮件账户" data-clear-btn="true">
+    </div>
+    <a data-rel="forward">下一步</a>
+</div>
+</body>
+</html>

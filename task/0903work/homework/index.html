@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jquery.js"></script>
+    <script src="jquery.mobile-1.4.5.js"></script>
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.css" type="text/css">
+</head>
+<body>
+<div data-role="page" id="setting">
+    <div data-role="header">
+       <h1>首页</h1>
+    </div>
+    <a href="#showAlert" data-rel="popup"  data-role="button">提示</a>
+    <div data-role="popup" id="showAlert" class="ui-content" data-dismissible="false" data-overlay-theme="b"
+         data-position-to="p" data-arrow="t" >
+        <a href="#" data-rel="back" class="ui-icon-delete ui-btn-icon-notext ui-btn-right"></a>
+        <p>弹出的内容</p>
+        <p>弹出的内容</p>
+        <p>弹出的内容</p>
+        <p>弹出的内容</p>
+        <p>弹出的内容</p>
+        <p>弹出的内容</p>
+        <p>弹出的内容</p>
+        <button id="test">试试按住我不放</button>
+    </div>
+    <p>你是做什么工作的?<span id="web">web前端</span>?还是<span>后台开发</span>?</p>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
