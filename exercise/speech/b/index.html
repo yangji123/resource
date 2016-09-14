@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+
+<body>
+<canvas id="canvas" width="700px" height="700px"></canvas>
+
+<script>
+    (function () {
+
+        var canvas=document.querySelector("#canvas");
+
+        function draw() {
+
+            //获取绘制的环境
+            var ctx=canvas.getContext("2d");
+
+            //开始绘制
+            ctx.beginPath();
+
+            //路径的粗细
+            ctx.lineWidth=2;
+
+            //路径的颜色
+            ctx.strokeStyle="black";
+
+            //开始绘制的位置
+            ctx.moveTo(0,0);
+
+            //绘制结束的位置
+            ctx.lineTo(100,100);
+
+            //正方形或者矩形  绘制的起始位置x  y width  height
+//            ctx.fillRect(100,0,100,100);
+
+            //五角星
+//            ctx.moveTo(76,197);
+//
+//            ctx.lineTo(421,197);
+//
+//            ctx.lineTo(143,399);
+//
+//            ctx.lineTo(248,71);
+//
+//            ctx.lineTo(356,399);
+//
+//            ctx.lineTo(76,197);
+
+            //绘制图片
+            //(1)
+//            var img=new Image();
+//            img.src="1.png";
+//            ctx.drawImage(img,100,250,200,200);
+
+//            var img=new Image();
+//            img.src="1.png";
+////            img.src="2.png";
+//            img.addEventListener("load",function () {
+//                ctx.drawImage(img,100,250,200,200);
+//            });
+//////            img.addEventListener("load",function () {
+//////                ctx.drawImage(img,300,250,200,200);
+//////            });
+////
+//            var img1=new Image();
+//            img1.src="2.png";
+//            img1.addEventListener("load",function () {
+//                //图片  坐标x  y  绘制的图片的width  height
+//                ctx.drawImage(img1,300,250,200,200);
+//            });
+
+
+            ctx.stroke();
+
+            //先绘制再填充颜色
+//            ctx.fillStyle="pink";
+//            ctx.fill();
+
+            ctx.closePath();
+
+        }
+        draw();
+    })();
+</script>
+</body>
+</html>
