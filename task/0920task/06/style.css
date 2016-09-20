@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+figure {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    float: left;
+}
+
+figcaption {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    color: black;
+    font-family: "宋体";
+}
+figure img{
+    opacity: 0.8;
+    transition: all 0.5s;
+}
+figure figcaption p{
+    transition: all 0.35s;
+    font-size: 13px;
+    text-align: left;
+}
+figure figcaption h2{
+    text-align: left;
+    font-size: 18px;
+}
+.img0 figcaption{
+     margin-top: 50px;
+     margin-left: 20px;
+ }
+.img0:hover img{
+    opacity: 0.6;
+    transform: scale(1.1,1.1);
+}
+.img0 figcaption h2{
+    transform: translate(-70px,0px);
+    transition-duration: 0.5s;
+    opacity: 0;
+}
+.img0:hover figcaption h2{
+    transform: translate(0px,0px);
+    opacity: 1;
+}
+.img0 figcaption p{
+    transform: translate(0px,150px);
+    transition-duration: 0.5s;
+    opacity: 0;
+}
+.img0:hover figcaption p{
+    transform: translate(0px,0px);
+    opacity: 1;
+}
+.img1 figcaption p {
+    background-color: white;
+    color: dimgray;
+    margin: 3px;
+    font-size: 12px;
+    text-align: center;
+    transform: translate(-120px, 0px);
+}
+.img1 figcaption p:nth-of-type(1){
+    transition-delay: 0.05s;
+}
+.img1 figcaption p:nth-of-type(2){
+    transition-delay: 0.15s;
+}
+.img1 figcaption p:nth-of-type(3){
+    transition-delay: 0.25s;
+}
+
+.img1 figcaption {
+    padding: 20px;
+}
+
+.img1:hover figcaption p {
+    transform: translate(0px, 0px);
+}
+.img1:hover img{
+    opacity: 0.6;
+    transform: scale(1.2,1.2);
+}
+
+.img2 figcaption div{
+    width: 250px;
+    height: 45px;
+    font-size: 12px;
+    background-color: white;
+    text-align: left;
+    margin-top: 205px;
+    transform: translate(0px,50px);
+    transition-duration: 2s;
+}
+.img2:hover figcaption div{
+    transform: translate(0px,0px);
+}
+.img2:hover img{
+    opacity: 0.6;
+    transform: scale(1.2,1.2);
+}
+
+.img3 figcaption div{
+    width: 250px;
+    height: 50px;
+    margin-top: 150px;
+    background-color: white;
+    text-align: right;
+    transform: translate(0px,50px) skew(0deg,0deg);
+    transition-duration: 1.5s;
+}
+.img3 figcaption h2{
+    color: white;
+    margin-left: 10px;
+    margin-top: 30px;
+    transform: translate(-5px,0);
+    opacity: 0;
+    transition-duration: 1.5s;
+}
+.img3:hover figcaption div{
+    transform: translate(0px,35px) skew(0deg,-5deg);
+}
+.img3:hover figcaption h2{
+    opacity: 0.8;
+    transform: translate(0px,0px);
+}
+.img3:hover img{
+    opacity: 0.6;
+    transform: scale(1.2,1.2);
+}
+
+.img4 figcaption div{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    left: 50px;
+    top: 50px;
+    transform: translate(0px, -210px) rotate(0deg);
+    transition-duration: 0.5s;
+}
+.img4:hover figcaption div{
+    transform: translate(0px,0px) rotate(360deg);
+}
+.img4 figcaption h2 {
+    transform: translate(0px, -100px);
+    opacity: 0;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+.img4:hover figcaption h2 {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.img4 figcaption p {
+    transform: translate(0px, 100px);
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition-duration: 0.5s;
+}
+.img4:hover figcaption p {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.img4:hover img{
+    opacity: 0.6;
+    transform: scale(1.2,1.2);
+}
+
+.img5 figcaption {
+    margin-left: 20px;
+    margin-top: 80px;
+    color: white;
+}
+.img5 figcaption h2{
+    transform: skew(90deg);
+    transition-duration: 1s;
+}
+.img5:hover figcaption h2{
+    transform: skew(0deg);
+}
+.img5 figcaption p{
+    transform: skew(90deg);
+    transition-duration: 1s;
+    transition-delay: 0.1s;
+}
+.img5:hover figcaption p{
+    transform: skew(0deg);
+}
+.img5:hover img{
+    opacity: 0.6;
+    transform: scale(1.2,1.2);
+}
+
+.img6 figcaption div{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    left: 25px;
+    top: 25px;
+    transform: scale(1.2,1.2);
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+.img6:hover figcaption div{
+    transform: scale(1,1);
+    opacity: 1;
+}
+.img6:hover img{
+    opacity: 0.6;
+    transform: scale(1.2,1.2);
+}
+.img7 figcaption h2{
+    transform: translate(-100px,0px);
+    color: white;
+    opacity: 0;
+}
+.img7:hover figcaption h2{
+    transform: translate(0px,0px);
+    opacity: 0.8;
+}
+.img7:hover img{
+    opacity: 0.6;
+    transform: scale(1.2,1.2);
+}
+.img8 img{
+    opacity: 1;
+    transform: scale(1,1);
+    transition-duration: 1s;
+}
+.img8:hover img{
+    opacity: 0.6;
+    transform: scale(1.2,1.2);
+}
