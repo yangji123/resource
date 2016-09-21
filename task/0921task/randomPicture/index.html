@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    #banner {
+        margin: 0 auto;
+        width: 1024px;
+        height: 576px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .banner_img {
+        position: absolute;
+        width: 7168px;
+    }
+
+    .banner_img li {
+        float: left;
+        width: 1024px;
+        height: 576px;
+    }
+
+    .banner_img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .btns {
+        position: absolute;
+        left: 400px;
+        bottom: 20px;
+    }
+
+    .btns li {
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        line-height: 25px;
+        float: left;
+        background: rgba(115, 115, 115, 0.5);
+        margin-right: 20px;
+        border-radius: 50%;
+    }
+    .turnleft, .turnright {
+        display: none;
+        position: absolute;
+        top: 250px;
+        background: rgba(115, 115, 115, 0.5);
+        width: 40px;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+    }
+    .turnleft {
+        left: 0;
+    }
+
+    .turnright {
+        right: 0;
+    }
+</style>
+<body>
+<div id="banner">
+    <ul class="banner_img" style="transition: all 1s linear;">
+        <li><img src="images/1.png"/></li>
+        <li><img src="images/9.png"/></li>
+        <li><img src="images/3.png"/></li>
+        <li><img src="images/2.png"/></li>
+        <li><img src="images/5.png"/></li>
+        <li><img src="images/6.png"/></li>
+        <li><img src="images/8.png"/></li>
+    </ul>
+    <ul class="btns">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+    <a href="#"><p class="turnleft">&lt;</p></a>
+    <a href="#"><p class="turnright">&gt;</p></a>
+</div>
+</body>
+<script>
+    var other = document.getElementById("banner");
+    var oul = document.getElementsByClassName("banner_img")[0];
+    var btns = document.getElementsByClassName("btns")[0].getElementsByTagName("li");
+    var change = document.getElementsByTagName("p");
+    var turnLeft=document.querySelector(".turnleft");
+    var turnRight=document.querySelector(".turnright");
+
+    banner(other, oul, btns, change, 3100, 1024,turnLeft,turnRight);
+    function banner(other, oul, btns, change, changetime, banwid,turnLeft,turnRight) {
+        var time;
+        var time1;
+        var page = 0;
+        var maxindex = btns.length;
+        time = setInterval(move, changetime);
+        function move() {
+
+            if (page > maxindex) {
+                oul.style.transition = "";
+                oul.style.left = "0";
+                page = 0;
+                time1 = setTimeout(function () {
+                    oul.style.transition = "all 1s linear";
+                }, 10)
+            }
+            oul.style.left = page * (-banwid) + "px";
+            page++;
+        }
+
+        for (var i = 0; i < maxindex; i++) {
+            btns[i].index = i;
+            btns[i].onmouseover = function () {
+                page = this.index;
+                oul.style.left = page * (-banwid) + "px";
+                btns[page].style.transform="scale(1.5,1.5)";
+                btns[page].style.backgroundColor="orange";
+                btns[page].onmouseout = function () {
+                    btns[page].style.transform="scale(1,1)";
+                    btns[page].style.backgroundColor="rgba(115, 115, 115, 0.5)";
+                }
+            }
+        }
+
+        other.onmouseover = function () {
+            clearInterval(time);
+            clearTimeout(time1);
+            change[0].style.display = "block";
+            change[1].style.display = "block";
+        };
+        other.onmouseout = function () {
+            time = setInterval(move, changetime);
+            change[0].style.display = "none";
+            change[1].style.display = "none";
+        };
+        turnRight.addEventListener("click",function (event) {
+            clearInterval(time);
+            clearTimeout(time1);
+            page +=1;
+            oul.style.left = page * (-banwid) + "px";
+            if (page > maxindex) {
+                oul.style.transition = "";
+                oul.style.left = "0";
+                page = 0;
+                time1 = setTimeout(function (event) {
+                    oul.style.transition = "all 1s linear";
+                }, 10)
+            }
+        });
+        turnLeft.addEventListener("click",function () {
+            clearInterval(time);
+            clearTimeout(time1);
+            page -=1;
+            oul.style.left = page * (-banwid) + "px";
+            if (page < 0) {
+                oul.style.transition = "";
+                oul.style.left = "0";
+                page = 0;
+                time1 = setTimeout(function () {
+                    oul.style.transition = "all 1s linear";
+                }, 10)
+            }
+        });
+    }
+</script>
+</html>
