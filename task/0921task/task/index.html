@@ -51,6 +51,10 @@
         margin-right: 20px;
         border-radius: 50%;
     }
+    /*.btns:hover li{*/
+        /*transform: scale(1.2,1.2);*/
+    /*}*/
+
     .turnleft, .turnright {
         display: none;
         position: absolute;
@@ -155,12 +159,12 @@
                 oul.style.transition = "";
                 oul.style.left = "0";
                 page = 0;
-                time1 = setTimeout(function (event) {
+                time1 = setTimeout(function () {
                     oul.style.transition = "all 1s linear";
                 }, 10)
             }
         });
-        turnLeft.addEventListener("click",function () {
+        turnLeft.addEventListener("click",function (event) {
             clearInterval(time);
             clearTimeout(time1);
             page -=1;
