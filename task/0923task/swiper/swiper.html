@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+    <title>招行I转角，遇见Ta</title>
+    <meta name="viewport" content="width=640, user-scalable=no">
+
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">-->
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Demo styles -->
+    <style>
+        html, body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 640px;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    </style>
+    <link href="css/one.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+<!-- Swiper -->
+<audio controls="controls" src="img/music.mp3" id="music"  style="display: none" autoplay="autoplay"></audio>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="one swiper-slide" style="background-color: #3e88f1">
+            <div class="img" style="margin-top: 450px">
+                <img src="img/indexBuilding.png">
+            </div>
+            <div class=" img" style="margin-top: -170px">
+                <img src="img/indexCloud.png" class="ani"
+                     swiper-animate-effect="zoomIn" swiper-animate-duration="1s" id="indexCloud">
+            </div>
+            <div class="img">
+                <img src="img/indexElements.png" class="ani"
+                     swiper-animate-effect="zoomIn" swiper-animate-duration="1s"
+                     swiper-animate-delay="0.2s">
+            </div>
+            <div class="img" style="margin-top: -80px">
+                <img src="img/indexFlight.png" class="ani"
+                     swiper-animate-effect="zoomIn" swiper-animate-duration="2s"
+                     swiper-animate-delay="0.8s">
+            </div>
+            <div class="img" style="margin-top: -390px">
+                <img src="img/indexTxt.png">
+            </div>
+            <div class="img" style="margin-top: -420px;margin-left: -200px">
+                <img src="img/indexFlowers01.png">
+            </div>
+            <div class="img" style="margin-top: -320px;margin-left: 130px">
+                <img src="img/indexFlowers02.png">
+            </div>
+            <div class="img" style="margin-top: 500px">
+                <img src="img/arrow-up.png" class="ani" swiper-animate-effect="bounceIn"
+                     swiper-animate-duration="1s" swiper-animate-delay="0.4s">
+            </div>
+            <div class="img" style="margin-top: -530px;margin-left: 280px">
+                <img src="img/musicBtn.png" class="musicBtn">
+            </div>
+        </div>
+        <div class="two swiper-slide" style="background-color: black">
+            <div class="img" style="margin-top: 65px">
+                <img src="img/wasBg.jpg">
+            </div>
+            <div class="img" style="margin-top: 5px">
+                <img src="img/wasStar.png" class="ani"
+                     swiper-animate-effect="bounceInRight" swiper-animate-duration="2s">
+            </div>
+            <div class="img" style="margin-top: -65px;margin-left: -10px">
+                <img src="img/wasIT.png">
+            </div>
+            <div class="img" style="margin-top: 75px">
+                <img src="img/wasFarm.png">
+            </div>
+            <div class="img" style="margin-top: 500px">
+                <img src="img/arrow-up.png" class="ani" swiper-animate-effect="bounceIn"
+                     swiper-animate-duration="1s" swiper-animate-delay="0.4s">
+            </div>
+            <div class="img" style="margin-top: -530px;margin-left: 280px">
+                <img src="img/musicBtn.png" class="musicBtn">
+            </div>
+        </div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class=" four swiper-slide" style="background-color: #302e5c">
+            <div class="img" style="margin-top: 65px">
+                <img src="img/lightOffBg.jpg" class="lightBg">
+            </div>
+            <div class="img" style="margin-left: -195px;margin-top: 110px">
+                <img src="img/lightOff.png" class="off">
+            </div>
+            <div class="img" id="cornerWall" style="margin-left: 255px;margin-top: 55px">
+                <img src="img/cornerWall.png">
+            </div>
+            <div class="img" id="cornerTitle" style="margin-left: 150px;margin-top: -450px">
+                <img src="img/cornerTitle.png">
+            </div>
+            <div class="img" id="click" style="margin-top: -220px">
+                <img src="img/clickGuide.png" id="clickGuide" class="ani" swiper-animate-effect="pulse"
+                     swiper-animate-duration="1s" swiper-animate-delay="0.4s">
+            </div>
+            <div class="img" style="margin-top: 500px">
+                <img src="img/arrow-up.png" class="ani" swiper-animate-effect="bounceIn"
+                     swiper-animate-duration="1s" swiper-animate-delay="0.4s">
+            </div>
+            <div class="img" style="margin-top: -530px;margin-left: 280px">
+                <img src="img/musicBtn.png" class="musicBtn">
+            </div>
+        </div>
+        <div class="five swiper-slide">
+            <div class="img" style="margin-top: 65px">
+                <img src="img/aboutBg.jpg">
+            </div>
+            <div class="img" style="margin-top: -395px">
+                <img src="img/footCity.jpg">
+            </div>
+            <div class="img" style="margin-top: -165px;margin-left: 80px">
+                <img src="img/footAvatar.png" class="ani"
+                     swiper-animate-effect="zoomIn" swiper-animate-duration="2s"
+                     swiper-animate-delay="0.2s">
+            </div>
+            <div class="img" style="margin-top: 155px">
+                <img src="img/footTa.png" id="footTa">
+            </div>
+            <div class="img" style="margin-top: 155px">
+                <img src="img/footTx.png"
+                     class="ani"
+                     swiper-animate-effect="zoomIn" swiper-animate-duration="1s"
+                     swiper-animate-delay="1.3s">
+            </div>
+            <div class="img" style="margin-top: 500px">
+                <img src="img/arrow-up.png" class="ani" swiper-animate-effect="bounceIn"
+                     swiper-animate-duration="1s" swiper-animate-delay="0.4s">
+            </div>
+            <div class="img" style="margin-top: -530px;margin-left: 280px">
+                <img src="img/musicBtn.png" class="musicBtn">
+            </div>
+        </div>
+        <div class="six swiper-slide">
+            <div class="img">
+                <img src="img/runBg.jpg" style="height: 1136px">
+            </div>
+            <div class="img" style="margin-top: -195px;margin-left: -140px">
+                <img src="img/runAvatar.png">
+            </div>
+            <div class="img" style="margin-top: 155px">
+                <img src="img/runTa.png">
+            </div>
+            <div class="img" style="margin-top: 155px">
+                <img src="img/runTxt.png">
+            </div>
+            <div class="img" style="margin-top: -530px;margin-left: 280px">
+                <img src="img/musicBtn.png" class="musicBtn">
+            </div>
+        </div>
+        <div class="seven swiper-slide" style="background-color: #4add9d">
+            <div class="img" style="margin-top: -200px">
+                <img src="img/salaryBg.png">
+            </div>
+            <div class="img" style="margin-top: -270px;margin-left: -40px">
+                <img src="img/salaryAvatar.png">
+            </div>
+            <div class="img" style="margin-top: 200px">
+                <img src="img/salaryTa.png">
+            </div>
+            <div class="img" style="margin-top: 200px">
+                <img src="img/salaryTxt.png">
+            </div>
+            <div class="img" style="margin-top: -530px;margin-left: 280px">
+                <img src="img/musicBtn.png" class="musicBtn">
+            </div>
+        </div>
+        <div class="eight swiper-slide" style="background-color: #b5effd">
+            <div class="img" style="margin-left: -230px;margin-top: -455px">
+                <img src="img/introFlowers.png">
+            </div>
+            <div class="img" style="width: 560px;height: 750px;background-color: #ef3d38;border-radius: 3%;
+   border: 20px solid #ed5050;border-bottom: 50px solid #ed5050;
+   margin-top: -25px">
+            </div>
+            <div class="img" style="margin-top: -90px">
+                <img src="img/introCloudy.png">
+            </div>
+            <div class="img" style="margin-top: -440px">
+                <img src="img/introLogo.png">
+            </div>
+            <div class="img" style="margin-top: 430px;margin-left: 215px">
+                <img src="img/introAvatar.png">
+            </div>
+            <div class="img" style="margin-top: 320px;margin-left: 90px">
+                <img src="img/introStar.png">
+            </div>
+            <div class="img" style="margin-top: -530px;margin-left: 280px">
+                <img src="img/musicBtn.png" class="musicBtn">
+            </div>
+        </div>
+        <div class="nine swiper-slide" style="background-color: #3e88f1">
+            <div class="img">
+                <img src="img/endBg.png">
+            </div>
+            <div class="img" style="margin-top: -90px">
+                <img src="img/endCloudys.png">
+            </div>
+            <div class="img" style="margin-top: -440px">
+                <img src="img/endLogo.png">
+            </div>
+            <div class="img" style="margin-top: -290px">
+                <img src="img/endTxt.png">
+            </div>
+            <div class="img" style="margin-top: -160px">
+                <img src="img/endMail.png">
+            </div>
+            <div class="img" style="margin-top: -60px">
+                <img src="img/endClickGuide.png">
+            </div>
+            <div class="img" style="margin-top: 75px">
+                <img src="img/endAvatar.png">
+            </div>
+            <div class="img" style="margin-top: 525px">
+                <img src="img/endBottomTxt.png">
+            </div>
+            <div class="img" style="margin-top: -530px;margin-left: 280px">
+                <img src="img/musicBtn.png" class="musicBtn">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Swiper JS -->
+<script src="js/swiper-3.3.1.min.js"></script>
+<script src="js/swiper.animate1.0.2.min.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        mousewheelControl: true,
+        nextButton: '.swiper-button-next',
+        onInit: function (swiper) { //Swiper2.x的初始化是onFirstInit
+            swiperAnimateCache(swiper); //隐藏动画元素
+            swiperAnimate(swiper); //初始化完成开始动画
+        },
+        onSlideChangeEnd: function (swiper) {
+            swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+        }
+    });
+
+</script>
+</body>
+</html>

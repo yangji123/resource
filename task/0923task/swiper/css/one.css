@@ -1,0 +1,64 @@
+
+.one {
+    background-color: #1a7fdc;
+    position: relative;
+}
+
+.one .img {
+    position: absolute;
+}
+.two {
+    position: relative;
+}
+
+.two .img {
+    position: absolute;
+}
+.four {
+    position: relative;
+}
+
+.four .img {
+    position: absolute;
+}
+.five {
+    position: relative;
+}
+
+.five .img {
+    position: absolute;
+}
+.six {
+    position: relative;
+}
+
+.six .img {
+    position: absolute;
+}
+.seven {
+    position: relative;
+}
+
+.seven .img {
+    position: absolute;
+}
+.eight {
+    position: relative;
+}
+
+.eight .img {
+    position: absolute;
+}
+.nine {
+    position: relative;
+}
+
+.nine .img {
+    position: absolute;
+}
+#indexCloud{
+    animation: indexCloud 2s linear 0.1s infinite;
+}
+#footTa{
+    animation: footTa 2s linear 0.1s;
+}
