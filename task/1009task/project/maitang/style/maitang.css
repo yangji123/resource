@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.random{
+    position: relative;
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+}
+.randomImg{
+    position: absolute;
+    float: left;
+    width: 400%;
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 200px;
+    border: 1px solid gainsboro;
+    overflow: hidden;
+    position: relative;
+}
+.pic{
+    float: left;
+    height: 140px;
+    margin: 30px 10px;
+    position: absolute;
+}
+.txt{
+    display: block;
+    width: 50%;
+    height: 80px;
+    top: 30px;
+    margin-left: 160px;
+    font-size: 20px;
+    font-weight: bolder;
+    position: absolute;
+    color: black;
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.priceHome{
+    display: block;
+    width: 55%;
+    height: 25px;
+    top: 115px;
+    margin-left: 160px;
+    font-size: 20px;
+    font-weight: bolder;
+    position: absolute;
+    color: #e2356a;
+    white-space: pre-wrap;
+    overflow: hidden;
+}
+.discountHome{
+    display: block;
+    width: 55%;
+    height: 25px;
+    top: 145px;
+    margin-left: 160px;
+    font-size: 17px;
+    font-weight: bolder;
+    position: absolute;
+    color: black;
+    white-space: pre-wrap;
+    overflow: hidden;
+}
+.shoppingCar{
+    float: right;
+    height: 35px;
+    margin-left: 265px;
+    margin-top: 130px;
+    position: absolute;
+}
+.classify li{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid darkgrey;
+    line-height: 50px;
+    background: url('../images/jiantou.png') no-repeat 100% 50%;
+}
+.classifyLi{
+    text-decoration: none;
+    font-size: 23px;
+    margin-left: 10px;
+}
