@@ -1,0 +1,26 @@
+#container{
+    margin: 40px auto;
+    width: 800px;
+    height: 480px;
+    perspective: 800px;   /*景深*/
+}
+
+img{
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+
+button{
+    display: block;
+    margin: 0 auto;
+    width: 140px;
+    text-align: center;
+    font: 16px/40px “微软雅黑”;
+    padding: 0 20px;
+    color:#fff;
+    background: #6be;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
