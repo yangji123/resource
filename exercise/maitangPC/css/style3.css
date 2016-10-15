@@ -1,0 +1,226 @@
+.seven{
+    width: 100%;
+    height: 8000px;
+    background-color: whitesmoke;
+}
+.seven1{
+    float: left;
+    width: 1190px;
+    height: 7842px;
+    margin-left: 80px;
+}
+.seven11{
+    float: left;
+    width: 1190px;
+    height: 372px;
+    border-bottom: 20px solid whitesmoke;
+}
+.seven111{
+    float: left;
+    width: 282.5px;
+    height: 372px;
+    border-right: 20px solid whitesmoke;
+    background-color: white;
+}
+.seven1111{
+    float: left;
+    position: relative;
+    width: 282.5px;
+    height: 300px;
+}
+.seven1111 a{
+    text-decoration: none;
+}
+.seven1112{
+    float: left;
+    width: 282.5px;
+    height: 22px;
+}
+.seven11121{
+    float: left;
+    width: 222.5px;
+    height: 22px;
+    overflow: hidden;
+    font-size: 13px;
+    line-height: 22px;
+}
+.seven11121 a{
+    float: left;
+    width: 222.5px;
+    height: 22px;
+    overflow: hidden;
+    font-size: 13px;
+    line-height: 22px;
+    color: black;
+    text-decoration: none;
+}
+.seven11121 a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.seven11122{
+    float: right;
+    font-size: 13px;
+    width: 60px;
+    height: 22px;
+    color: darkgray;
+    line-height: 22px;
+    text-align: center;
+}
+
+.seven1113{
+    float: left;
+    width: 282.5px;
+    height: 50px;
+}
+.seven11131{
+    float: left;
+    width: 222.5px;
+    height: 50px;
+    font-size: 13px;
+    line-height: 50px;
+    color: darkgray;
+}
+.seven11131 span{
+    font-size: 40px;
+    color: darkgray;
+}
+.seven11132{
+    float: right;
+    width: 60px;
+    height: 50px;
+    font-size: 15px;
+    color: crimson;
+    line-height: 50px;
+    text-align: center;
+}
+.seven112{
+    float: left;
+    width: 282.5px;
+    height: 372px;
+    background-color: white;
+}
+.seven1121{
+    float: left;
+    position: relative;
+    width: 282.5px;
+    height: 300px;
+}
+.seven1121 a{
+    text-decoration: none;
+}
+.seven1122{
+    float: left;
+    width: 282.5px;
+    height: 22px;
+}
+.seven11221{
+    float: left;
+    width: 222.5px;
+    height: 22px;
+    overflow: hidden;
+    font-size: 13px;
+    line-height: 22px;
+}
+.seven11221 a{
+    float: left;
+    width: 222.5px;
+    height: 22px;
+    overflow: hidden;
+    font-size: 13px;
+    line-height: 22px;
+    color: black;
+    text-decoration: none;
+}
+.seven11221 a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.seven11222{
+    float: right;
+    font-size: 13px;
+    width: 60px;
+    height: 22px;
+    color: darkgray;
+    line-height: 22px;
+    text-align: center;
+}
+
+.seven1123{
+    float: left;
+    width: 282.5px;
+    height: 50px;
+}
+.seven11231{
+    float: left;
+    width: 222.5px;
+    height: 50px;
+    font-size: 13px;
+    line-height: 50px;
+    color: darkgray;
+}
+.seven11231 span{
+    font-size: 40px;
+    color: darkgray;
+}
+.seven11232{
+    float: right;
+    width: 60px;
+    height: 50px;
+    font-size: 15px;
+    color: crimson;
+    line-height: 50px;
+    text-align: center;
+}
+.seven2{
+    float: left;
+    width: 1190px;
+    height: 160px;
+    margin-left: 80px;
+    line-height: 160px;
+    text-align: center;
+}
+.seven21{
+    margin-left: 310px;
+    margin-top: 30px;
+    width: 570px;
+    height: 50px;
+}
+.seven21 a{
+    color: gray;
+    text-decoration: none;
+}
+.seven21 a:hover{
+    color: gray;
+    text-decoration: underline;
+}
+.seven211{
+    float: left;
+    width: 90px;
+    height: 50px;
+    background-color: white;
+    border-right: 5px solid whitesmoke;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    line-height: 50px;
+    text-align: center;
+}
+.seven212{
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-right: 5px solid whitesmoke;
+    line-height: 50px;
+    text-align: center;
+}
+.seven213{
+    float: right;
+    width: 90px;
+    height: 50px;
+    background-color: white;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    line-height: 50px;
+    text-align: center;
+}

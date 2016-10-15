@@ -1,0 +1,127 @@
+.eight{
+    width: 100%;
+    height: 270px;
+    background-color: tomato;
+}
+.eight1{
+    float: left;
+    margin-top: 3px;
+    width: 100%;
+    height: 267px;
+    background-color: whitesmoke;
+}
+.eight11{
+    margin-left: 125px;
+    width: 1100px;
+    height: 267px;
+}
+.eight111{
+    position: relative;
+    width: 1100px;
+    height: 160px;
+}
+.eight1111{
+    float: left;
+    width: 90px;
+    height: 160px;
+}
+.eight1111 img{
+    float: left;
+    margin-top: 30px;
+}
+.eight1111 span{
+    float: left;
+    color: tomato;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.eight1112{
+    position: absolute;
+    width: 790px;
+    height: 160px;
+    margin-left: 100px;
+}
+.eight1112 div{
+    float: left;
+    margin-top: 25px;
+    width: 197.5px;
+    height: 135px;
+    color: gray;
+}
+.eight1112 div span{
+    margin-left: 60px;
+    width: 197.5px;
+    height: 20px;
+    font-size: 15px;
+}
+.eight1112 div ul{
+    margin-left: 65px;
+    margin-top: 10px;
+}
+.eight1112 div ul a{
+    width: 197.5px;
+    height: 25px;
+    color: gray;
+    line-height: 25px;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+}
+.eight1112 div ul a:hover{
+    color: gray;
+    text-decoration: underline;
+}
+.eight1113{
+    float: right;
+    width: 165px;
+    height: 160px;
+    background-color: red;
+}
+.eight112{
+    position: relative;
+    width: 1100px;
+    height: 40px;
+    color: gray;
+}
+.eight112 span{
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+}
+.eight112 ul{
+    position: absolute;
+    margin-left: 60px;
+    width: 305px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    list-style: none;
+    font-size: 12px;
+}
+.eight112 ul li{
+    width: 61px;
+    height: 40px;
+    float: left;
+}
+.eight113{
+    width: 1100px;
+    height: 66px;
+    line-height: 66px;
+    text-align: center;
+    color: darkgray;
+    font-size: 12px;
+    border-top: 1px dashed gainsboro;
+}
+
+.nine{
+    position: fixed;
+    width: 35px;
+    height: 670px;
+    background-color: #1b1b1b;
+    margin-top: -9070px;
+    margin-left: 1320px;
+    z-index: 100;
+
+}

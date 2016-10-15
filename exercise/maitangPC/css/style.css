@@ -1,0 +1,99 @@
+*{
+    padding:0;
+    margin: 0;
+}
+#one{
+    width: 100%;
+    height: 9070px;
+}
+.one{
+    width: 100%;
+    height: 90px;
+}
+
+
+.two{
+    width: 100%;
+    height: 30px;
+    background-color: gainsboro;
+    opacity: 0.4;
+}
+.two1{
+    float: left;
+    width: 420px;
+    height: 30px;
+    font-size: 13px;
+    margin-left: 80px;
+}
+.two1 ul{
+    list-style: none;
+}
+.two11{
+    background-color: white;
+}
+.two1 ul a{
+    text-align: center;
+    line-height: 30px;
+    float: left;
+    width: 83px;
+    height: 30px;
+    text-decoration: none;
+    color: black;
+    border-right: 1px solid gray;
+}
+.two1 ul a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.two2{
+    float: right;
+    width: 250px;
+    height: 30px;
+    font-size: 13px;
+    margin-right: 80px;
+    margin-top: 8px;
+}
+.two21{
+    text-align: center;
+    line-height: 15px;
+    float: left;
+    width: 123px;
+    height: 15px;
+    border-left: 2px solid gray;
+}
+.two21 ul{
+    list-style: none;
+}
+.two21 ul a{
+    float: left;
+    width: 61px;
+    height: 15px;
+    text-decoration: none;
+    color: black;
+}
+.two21 ul a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.two22{
+    text-align: center;
+    line-height: 15px;
+    float: left;
+    width: 123px;
+    height: 15px;
+    border-left: 2px solid gray;
+}
+.two22 ul{
+    list-style: none;
+}
+.two22 ul a{
+    float: left;
+    width: 61px;
+    height: 15px;
+    text-decoration: none;
+    color: black;
+}
+.two22 ul a:hover{
+    text-decoration: underline;
+    color: black;
+}
