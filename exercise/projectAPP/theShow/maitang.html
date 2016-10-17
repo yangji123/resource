@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="script/jquery.js"></script>
+    <script src="script/jquery.mobile-1.4.5.js"></script>
+    <link rel="stylesheet" href="style/jquery.mobile-1.4.5.css" type="text/css">
+    <link rel="stylesheet" href="style/maitang.css">
+</head>
+<body>
+
+<div data-role="page" id="home">
+    <div data-role="header" data-position="fixed" style="background-color: #e2356a;color: white">
+        <h1>ZXIU 走秀网</h1>
+    </div>
+    <div data-role="content" style="background: #5d5758;height: 55px;">
+        <form method="get" action="" class="ui-filterable">
+            <input type="text" data-type="search" placeholder="请输入搜索内容">
+        </form>
+    </div>
+    <div data-role="main" class="random"></div>
+    <form id="form">
+        <div data-role="main" class="goodsList"></div>
+    </form>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" class="footer">
+            <ul>
+                <li><a href="#home" data-theme="b" data-iconpos="top" data-icon="home" class="ui-nodisc-icon">首页</a>
+                </li>
+                <li><a href="#classification" data-theme="b" data-iconpos="top" data-icon="bullets"
+                       class="ui-nodisc-icon">分类</a></li>
+                <li><a href="#shoppingCart" data-theme="b" data-iconpos="top" data-icon="shop" class="ui-nodisc-icon">购物车</a>
+                </li>
+                <li><a href="#myShow" data-theme="b" data-iconpos="top" data-icon="user"
+                       class="ui-nodisc-icon">我的秀</a></li>
+                <li><a href="#more" data-theme="b" data-iconpos="top" data-icon="gear" class="ui-nodisc-icon">更多</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="classification">
+    <div data-role="header" data-position="fixed" style="background-color: #e2356a;color: white">
+        <h1>ZXIU 走秀网</h1>
+        <a id="backButton" href="#" data-rel="back" style="background-color: #e2356a;color: white"><</a>
+    </div>
+    <div data-role="content" style="background: #5d5758;height: 55px;">
+        <form method="get" action="" class="ui-filterable">
+            <input type="text" data-type="search" placeholder="请输入搜索内容">
+        </form>
+    </div>
+    <div data-role="main" class="classificationList">
+        <h1 style="border-bottom: 1px solid darkgrey">全部</h1>
+        <ul data-role="listview" class="classify"></ul>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" class="footer">
+            <ul>
+                <li><a href="#home" data-theme="b" data-iconpos="top" data-icon="home" class="ui-nodisc-icon">首页</a>
+                </li>
+                <li><a href="#classification" data-theme="b" data-iconpos="top" data-icon="bullets"
+                       class="ui-nodisc-icon">分类</a></li>
+                <li><a href="#shoppingCart" data-theme="b" data-iconpos="top" data-icon="shop" class="ui-nodisc-icon">购物车</a>
+                </li>
+                <li><a href="#myShow" data-theme="b" data-iconpos="top" data-icon="user"
+                       class="ui-nodisc-icon">我的秀</a></li>
+                <li><a href="#more" data-theme="b" data-iconpos="top" data-icon="gear" class="ui-nodisc-icon">更多</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="shoppingCart">
+    <div data-role="header" data-position="fixed" style="background-color: #e2356a;color: white">
+        <h1>购物车</h1>
+        <a id="backBtn" href="#" data-rel="back" style="background-color: #e2356a;color: white"><</a>
+        <a id="Settlement" href="#" style="background-color: #e2356a;color: white">去结算</a>
+    </div>
+    <div data-role="content" style="background: #5d5758;height: 55px;color: white;font-size: 18px" data-position="fixed">
+        <div style="height: 40px;margin: 5px;line-height: 40px">
+            <p>商品数量：</p>
+            <div class="countClassID" style="width: 35px;height: 40px;margin-top: -40px;margin-left: 80px"></div>
+        </div>
+        <div style="height: 40px;line-height: 40px;;margin-left: 120px;margin-top: -45px">
+            <p>应付总额(不含运费)：</p>
+            <div class="countPrice" style="width: 60px;height: 40px;margin-top: -40px;margin-left: 170px"></div>
+        </div>
+    </div>
+    <div data-role="main" class="classifyCar">
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" class="footer">
+            <ul>
+                <li><a href="#home" data-theme="b" data-iconpos="top" data-icon="home" class="ui-nodisc-icon">首页</a>
+                </li>
+                <li><a href="#classification" data-theme="b" data-iconpos="top" data-icon="bullets"
+                       class="ui-nodisc-icon">分类</a></li>
+                <li><a href="#shoppingCart" data-theme="b" data-iconpos="top" data-icon="shop" class="ui-nodisc-icon">购物车</a>
+                </li>
+                <li><a href="#myShow" data-theme="b" data-iconpos="top" data-icon="user"
+                       class="ui-nodisc-icon">我的秀</a></li>
+                <li><a href="#more" data-theme="b" data-iconpos="top" data-icon="gear" class="ui-nodisc-icon">更多</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="shoppingCartNone">
+    <div data-role="header" data-position="fixed" style="background-color: #e2356a;color: white">
+        <h1>购物车</h1>
+        <a id="backBtn1" href="#" data-rel="back" style="background-color: #e2356a;color: white"><</a>
+        <a id="Settlement1" href="#" data-rel="back" style="background-color: #e2356a;color: white">去结算</a>
+    </div>
+    <div data-role="main">
+        <div data-role="content"
+             style="height: 40px;line-height: 50px;text-align: center;font-size: 30px;font-weight: bold">您的购物车空空~
+        </div>
+        <div data-role="content" style="height: 158px"><img src="images/6.png" style="margin-left: 100px"></div>
+        <div data-role="content">
+            <a href="#home">
+                <div style="width: 250px;height: 70px;position: absolute;
+            background-color:#e2356a;color: white;border-radius: 5px;text-align: center;
+            line-height: 70px;font-weight: bold;font-size: 35px;margin-left: 50px;
+            margin-top: 80px">去逛逛
+                </div>
+            </a>
+        </div>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" class="footer">
+            <ul>
+                <li><a href="#home" data-theme="b" data-iconpos="top" data-icon="home" class="ui-nodisc-icon">首页</a>
+                </li>
+                <li><a href="#classification" data-theme="b" data-iconpos="top" data-icon="bullets"
+                       class="ui-nodisc-icon">分类</a></li>
+                <li><a href="#shoppingCart" data-theme="b" data-iconpos="top" data-icon="shop" class="ui-nodisc-icon">购物车</a>
+                </li>
+                <li><a href="#myShow" data-theme="b" data-iconpos="top" data-icon="user"
+                       class="ui-nodisc-icon">我的秀</a></li>
+                <li><a href="#more" data-theme="b" data-iconpos="top" data-icon="gear" class="ui-nodisc-icon">更多</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="myShow">
+    <div data-role="header" data-position="fixed" style="background-color: #e2356a;color: white">
+        <a id="backBtnMyShow" href="#" data-rel="back" style="background-color: #e2356a;color: white"><</a>
+        <h1>我的秀</h1>
+    </div>
+    <div data-role="content"  style="margin-top: 20px ;height: 100px">
+        <img src="images/user.png">
+        <div style="margin-top: -90px;margin-left: 110px">
+            <h2>昵称:</h2>
+            <div id="getUser" style="width: 150px;height: 35px;margin-top: -32px;margin-left: 70px;
+            line-height: 35px;"></div><br>
+            <a href="#login" style="text-decoration: none;color: white">
+                <div style="width: 70px;height: 40px;
+            background-color: #e2356a;margin-right: 15px;line-height: 40px;text-align: center;font-size: 18px;
+            margin-top: -10px;border-radius: 5px">登录
+                </div>
+            </a>
+
+            <a href="#register" style="text-decoration: none;color: white">
+                <div style="width: 70px;height: 40px;
+            background-color: #e2356a;line-height: 40px;text-align: center;font-size: 18px;margin-top: -40px;
+            margin-left: 100px;border-radius: 5px">注册
+                </div>
+            </a>
+        </div>
+    </div>
+    <div data-role="main" style="margin-top: 45px;overflow: hidden;border: 1px solid gray;width: 340px;
+    border-radius: 10px;margin-left: 15px;">
+        <ul data-role="listview">
+            <li><a href="#myOrdering" data-theme="b" class="ui-nodisc-icon">我的订单</a></li>
+            <li><a href="#myCoupon" class="ui-nodisc-icon">我的优惠券</a></li>
+            <li><a href="#browsingRecord" class="ui-nodisc-icon">浏览记录</a></li>
+            <li><a href="#myCollection" class="ui-nodisc-icon">我的收藏</a></li>
+        </ul>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" class="footer">
+            <ul>
+                <li><a href="#home" data-theme="b" data-iconpos="top" data-icon="home" class="ui-nodisc-icon">首页</a>
+                </li>
+                <li><a href="#classification" data-theme="b" data-iconpos="top" data-icon="bullets"
+                       class="ui-nodisc-icon">分类</a></li>
+                <li><a href="#shoppingCart" data-theme="b" data-iconpos="top" data-icon="shop" class="ui-nodisc-icon">购物车</a>
+                </li>
+                <li><a href="#myShow" data-theme="b" data-iconpos="top" data-icon="user" class="ui-nodisc-icon">我的秀</a>
+                </li>
+                <li><a href="#more" data-theme="b" data-iconpos="top" data-icon="gear" class="ui-nodisc-icon">更多</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="more">
+    <div data-role="header" data-position="fixed" style="background-color: #e2356a;color: white">
+        <a id="backBtnMore" href="#" data-rel="back" style="background-color: #e2356a;color: white"><</a>
+        <h1>更多</h1>
+    </div>
+    <div data-role="main" style="margin-top: 45px;overflow: hidden;border: 1px solid gray;width: 340px;
+    border-radius: 10px;margin-left: 15px;">
+        <ul data-role="listview">
+            <li><a href="#">常见问题</a></li>
+            <li><a href="#">系统设置</a></li>
+            <li><a href="#">软件更新</a></li>
+            <li><a href="#">扫描二维码</a></li>
+        </ul>
+    </div>
+    <div data-role="main" style="margin-top: 45px;overflow: hidden;border: 1px solid gray;width: 340px;
+    border-radius: 10px;margin-left: 15px;">
+        <ul data-role="listview">
+            <li><a href="#">我要提意见</a></li>
+            <li><a href="#">关于</a></li>
+        </ul>
+    </div>
+    <div data-role="main">
+        <form method="get" action="">
+            <fieldset class="ui-field-contain">
+                <a data-inline="true">
+                    <input type="submit" value="退出登录" class="userOut"></a>
+            </fieldset>
+        </form>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" class="footer">
+            <ul>
+                <li><a href="#home" data-theme="b" data-iconpos="top" data-icon="home" class="ui-nodisc-icon">首页</a>
+                </li>
+                <li><a href="#classification" data-theme="b" data-iconpos="top" data-icon="bullets"
+                       class="ui-nodisc-icon">分类</a></li>
+                <li><a href="#shoppingCart" data-theme="b" data-iconpos="top" data-icon="shop" class="ui-nodisc-icon">购物车</a>
+                </li>
+                <li><a href="#myShow" data-theme="b" data-iconpos="top" data-icon="user" class="ui-nodisc-icon">我的秀</a>
+                </li>
+                <li><a href="#more" data-theme="b" data-iconpos="top" data-icon="gear" class="ui-nodisc-icon">更多</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="register">
+    <div data-role="header" data-position="fixed" style="background-color: #e2356a;color: white">
+        <a id="backBtnRegister" href="#" data-rel="back" style="background-color: #e2356a;color: white"><</a>
+        <a href="#login" data-role="button" style="background-color: #e2356a;color: white;">登录</a>
+        <h1>注册</h1>
+    </div>
+    <div data-role="main">
+        <form method="get" action="">
+            <fieldset class="ui-field-contain">
+                <input type="text" name="username" id="userRegister" placeholder="账号">
+                <input type="password" name="password" id="passwordRegister" placeholder="密码">
+                <input type="password" name="repassword" placeholder="重复密码">
+                <a data-inline="true"><input type="submit" id="submitRegister" value="同意服务协议并注册"
+                                             style="position: absolute;left: 20px"></a>
+            </fieldset>
+        </form>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" class="footer">
+            <ul>
+                <li><a href="#home" data-theme="b" data-iconpos="top" data-icon="home" class="ui-nodisc-icon">首页</a>
+                </li>
+                <li><a href="#classification" data-theme="b" data-iconpos="top" data-icon="bullets"
+                       class="ui-nodisc-icon">分类</a></li>
+                <li><a href="#shoppingCart" data-theme="b" data-iconpos="top" data-icon="shop" class="ui-nodisc-icon">购物车</a>
+                </li>
+                <li><a href="#myShow" data-theme="b" data-iconpos="top" data-icon="user" class="ui-nodisc-icon">我的秀</a>
+                </li>
+                <li><a href="#more" data-theme="b" data-iconpos="top" data-icon="gear" class="ui-nodisc-icon">更多</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="login">
+    <div data-role="header" data-position="fixed" style="background-color: #e2356a;color: white">
+        <a id="backBtnLogin" href="#" data-rel="back" style="background-color: #e2356a;color: white"><</a>
+        <a href="#register" data-role="button" style="background-color: #e2356a;color: white;">注册</a>
+        <h1>登录</h1>
+    </div>
+    <div data-role="main">
+        <form method="get" action="">
+            <fieldset class="ui-field-contain">
+                <input type="text" name="username" id="userLogin" value="" placeholder="账号">
+                <input type="password" name="password" id="passwordLogin" placeholder="密码">
+                <!--<label for="remember">记住密码&nbsp;&nbsp;<span><a href="#" style="color: #666666">忘记密码？</a></span></label>-->
+                <a data-inline="true"><input type="submit" id="submitLogin" value="登录"
+                                             style="position: absolute;left: 20px"></a>
+                <div style="overflow: hidden;width: 45px;height: 20px;margin-top: 20px">
+                    <input type="checkbox" id="remember" name="rememberPassword">
+                </div>
+                <p style="margin-top: -20px;margin-left: 30px">记住密码</p>
+                <a href="#" style="color: #666666;float: right;margin-top: -20px"><span>忘记密码？</span></a>
+            </fieldset>
+        </form>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" class="footer">
+            <ul>
+                <li><a href="#home" data-theme="b" data-iconpos="top" data-icon="home" class="ui-nodisc-icon">首页</a>
+                </li>
+                <li><a href="#classification" data-theme="b" data-iconpos="top" data-icon="bullets"
+                       class="ui-nodisc-icon">分类</a></li>
+                <li><a href="#shoppingCart" data-theme="b" data-iconpos="top" data-icon="shop" class="ui-nodisc-icon">购物车</a>
+                </li>
+                <li><a href="#myShow" data-theme="b" data-iconpos="top" data-icon="user" class="ui-nodisc-icon">我的秀</a>
+                </li>
+                <li><a href="#more" data-theme="b" data-iconpos="top" data-icon="gear" class="ui-nodisc-icon">更多</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="myOrdering">
+    <div data-role="header" data-position="fixed" style="background-color: #e2356a;color: white">
+        <a id="backBtnMyOrdering" href="#" data-rel="back" style="background-color: #e2356a;color: white"><</a>
+        <h1>我的订单</h1>
+    </div>
+    <div data-role="main"></div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" class="footer">
+            <ul>
+                <li><a href="#home" data-theme="b" data-iconpos="top" data-icon="home" class="ui-nodisc-icon">首页</a>
+                </li>
+                <li><a href="#classification" data-theme="b" data-iconpos="top" data-icon="bullets"
+                       class="ui-nodisc-icon">分类</a></li>
+                <li><a href="#shoppingCart" data-theme="b" data-iconpos="top" data-icon="shop" class="ui-nodisc-icon">购物车</a>
+                </li>
+                <li><a href="#myShow" data-theme="b" data-iconpos="top" data-icon="user" class="ui-nodisc-icon">我的秀</a>
+                </li>
+                <li><a href="#more" data-theme="b" data-iconpos="top" data-icon="gear" class="ui-nodisc-icon">更多</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="myCoupon">
+    <div data-role="header" data-position="fixed" style="background-color: #e2356a;color: white">
+        <a id="backBtnMyCoupon" href="#" data-rel="back" style="background-color: #e2356a;color: white"><</a>
+        <h1>我的优惠券</h1>
+    </div>
+    <div data-role="main">
+        <div data-role="controlgroup" data-type = "horizontal" style="margin-left: 25px;margin-top: 20px">
+            <a class="wei" href="#" data-role="button">未使用</a>
+            <a class="wei" href="#" data-role="button">已使用</a>
+            <a class="wei" href="#" data-role="button">已过期</a>
+            <a class="wei" href="#" data-role="button">未激活</a>
+        </div>
+        <div data-role="content">
+            <div class="coupon" style="background-color: wheat;width: 350px;height: 120px;border-radius: 8px">aa</div>
+            <div class="coupon" style="display:none;background-color: wheat;width: 350px;height: 120px;border-radius: 8px">bb</div>
+            <div class="coupon" style="display:none;background-color: wheat;width: 350px;height: 120px;border-radius: 8px">cc</div>
+            <div class="coupon" style="display:none;background-color: wheat;width: 350px;height: 120px;border-radius: 8px">dd</div>
+        </div>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" class="footer">
+            <ul>
+                <li><a href="#home" data-theme="b" data-iconpos="top" data-icon="home" class="ui-nodisc-icon">首页</a>
+                </li>
+                <li><a href="#classification" data-theme="b" data-iconpos="top" data-icon="bullets"
+                       class="ui-nodisc-icon">分类</a></li>
+                <li><a href="#shoppingCart" data-theme="b" data-iconpos="top" data-icon="shop" class="ui-nodisc-icon">购物车</a>
+                </li>
+                <li><a href="#myShow" data-theme="b" data-iconpos="top" data-icon="user" class="ui-nodisc-icon">我的秀</a>
+                </li>
+                <li><a href="#more" data-theme="b" data-iconpos="top" data-icon="gear" class="ui-nodisc-icon">更多</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="browsingRecord">
+    <div data-role="header" data-position="fixed" style="background-color: #e2356a;color: white">
+        <a id="backBtnBrowsingRecord" href="#" data-rel="back" style="background-color: #e2356a;color: white"><</a>
+        <h1>浏览记录</h1>
+    </div>
+    <div data-role="main"></div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" class="footer">
+            <ul>
+                <li><a href="#home" data-theme="b" data-iconpos="top" data-icon="home" class="ui-nodisc-icon">首页</a>
+                </li>
+                <li><a href="#classification" data-theme="b" data-iconpos="top" data-icon="bullets"
+                       class="ui-nodisc-icon">分类</a></li>
+                <li><a href="#shoppingCart" data-theme="b" data-iconpos="top" data-icon="shop" class="ui-nodisc-icon">购物车</a>
+                </li>
+                <li><a href="#myShow" data-theme="b" data-iconpos="top" data-icon="user" class="ui-nodisc-icon">我的秀</a>
+                </li>
+                <li><a href="#more" data-theme="b" data-iconpos="top" data-icon="gear" class="ui-nodisc-icon">更多</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="myCollection">
+    <div data-role="header" data-position="fixed" style="background-color: #e2356a;color: white">
+        <a id="backBtnMyCollection" href="#" data-rel="back" style="background-color: #e2356a;color: white"><</a>
+        <h1>我的收藏</h1>
+    </div>
+    <div data-role="main"></div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" class="footer">
+            <ul>
+                <li><a href="#home" data-theme="b" data-iconpos="top" data-icon="home" class="ui-nodisc-icon">首页</a>
+                </li>
+                <li><a href="#classification" data-theme="b" data-iconpos="top" data-icon="bullets"
+                       class="ui-nodisc-icon">分类</a></li>
+                <li><a href="#shoppingCart" data-theme="b" data-iconpos="top" data-icon="shop" class="ui-nodisc-icon">购物车</a>
+                </li>
+                <li><a href="#myShow" data-theme="b" data-iconpos="top" data-icon="user" class="ui-nodisc-icon">我的秀</a>
+                </li>
+                <li><a href="#more" data-theme="b" data-iconpos="top" data-icon="gear" class="ui-nodisc-icon">更多</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="commodityIntroduction">
+    <div data-role="header" data-position="fixed" style="background-color: #e2356a;color: white">
+        <a id="backBtnCommodityIntroduction" href="#" data-rel="back"
+           style="background-color: #e2356a;color: white"><</a>
+        <a href="#" data-role="button" style="background-color: #e2356a;color: white;">分享</a>
+        <h1>商品介绍</h1>
+    </div>
+    <div data-role="main"></div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" class="footer">
+            <ul>
+                <li><a href="#commodityIntroduction" data-theme="b" data-iconpos="top" data-icon="home"
+                       class="ui-nodisc-icon">介绍</a></li>
+                <li><a href="#commodityDetails" data-theme="b" data-iconpos="top" data-icon="bullets"
+                       class="ui-nodisc-icon">详情</a></li>
+                <li><a href="#commodityRealShot" data-theme="b" data-iconpos="top" data-icon="gear" class="ui-nodisc-icon">实拍</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="commodityDetails">
+    <div data-role="header" data-position="fixed" style="background-color: #e2356a;color: white">
+        <a id="backBtnCommodityDetails" href="#" data-rel="back"
+           style="background-color: #e2356a;color: white"><</a>
+        <a href="#" data-role="button" style="background-color: #e2356a;color: white;">分享</a>
+        <h1>商品详情</h1>
+    </div>
+    <div data-role="main"></div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" class="footer">
+            <ul>
+                <li><a href="#commodityIntroduction" data-theme="b" data-iconpos="top" data-icon="home"
+                       class="ui-nodisc-icon">介绍</a></li>
+                <li><a href="#commodityDetails" data-theme="b" data-iconpos="top" data-icon="bullets"
+                       class="ui-nodisc-icon">详情</a></li>
+                <li><a href="#commodityRealShot" data-theme="b" data-iconpos="top" data-icon="gear"
+                       class="ui-nodisc-icon">实拍</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="commodityRealShot">
+    <div data-role="header" data-position="fixed" style="background-color: #e2356a;color: white">
+        <a id="backBtnCommodityRealShot" href="#" data-rel="back"
+           style="background-color: #e2356a;color: white"><</a>
+        <a href="#" data-role="button" style="background-color: #e2356a;color: white;">分享</a>
+        <h1>商品详情</h1>
+    </div>
+    <div data-role="main"></div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" class="footer">
+            <ul>
+                <li><a href="#commodityIntroduction" data-theme="b" data-iconpos="top" data-icon="home"
+                       class="ui-nodisc-icon">介绍</a></li>
+                <li><a href="#commodityDetails" data-theme="b" data-iconpos="top" data-icon="bullets"
+                       class="ui-nodisc-icon">详情</a></li>
+                <li><a href="#commodityRealShot" data-theme="b" data-iconpos="top" data-icon="gear"
+                       class="ui-nodisc-icon">实拍</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="script/maitang.js"></script>
+</body>
+</html>
