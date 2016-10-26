@@ -1,0 +1,27 @@
+#container{
+    width: 800px;
+    height: 600px;
+    position: relative;
+    left:0;right:0;
+    top: 60px;
+    margin: auto;
+}
+#container .fan{
+    position: absolute;
+    left:0;right:0;top:0;bottom:0;
+    margin: auto;
+    width: 100px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #fff;
+    transform-origin:20px 280px ;
+}
+#container .fan div{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 50%;
+    background: beige;
+}
